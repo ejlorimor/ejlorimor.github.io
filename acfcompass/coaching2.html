@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ACF Compass - Coaching</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <style>
+    body {
+      background-color: #ffffff;
+    }
+        
+    /* Custom container */
+    .container {
+      margin: 0 auto;
+      /*padding: 20px;*/
+      padding-top: 0;
+      max-width: 1000px;
+      /*background-color: white;*/
+    }
+    
+    .row {
+      background: #ffffff;
+      border-radius: 4px;
+      margin-left: -10px;
+      width: 960px;
+    }
+    
+    .navbar-inner {
+      padding: 0;
+    }
+    .container > hr {
+      margin: 60px 0;
+    }
+    
+    .footer {
+      /*border-top: 2px solid #333333;*/
+      margin-top: 15px;
+      text-align: center;
+      background-color: #162536;
+      padding: 10px;
+      color: #ffffff;
+    }
+    
+    .note {
+      font-size: 0.9em;
+      color: #454545;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <h3><img src="img/COMPASS-01.jpg" width="160" height="73" style="padding-left:40px;" /></h3>
+        <div class="navbar navbar-inverse"></div>
+      </div>
+
+      <div class="row" style="border: 1px solid #aaaaaa;">
+        <div class="span6" style="padding-top:15px;">
+          <form class="form-horizontal">
+            <div class="control-group">
+              <label class="control-label" for="first-name">First Name</label>
+              <div class="controls">
+                <input type="text" id="first-name">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="last-name">Last Name</label>
+              <div class="controls">
+                <input type="text" id="last-name">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="mar-status">Martial Status</label>
+              <div class="controls">
+                <label class="radio">
+                  <input type="radio" name="mar-status" id="mar-status" value="married" checked>
+                  Married
+                </label>
+                <label class="radio">
+                  <input type="radio" name="mar-status" id="mar-status" value="single">
+                  Single
+                </label>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="spouses-name">Spouses Name</label>
+              <div class="controls">
+                <input type="text" id="spouses-name">
+              </div>
+            </div>
+            <hr>
+            <div class="control-group">
+              <label class="control-label" for="email">Email</label>
+              <div class="controls">
+                <input type="email" id="email">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="phone">Phone</label>
+              <div class="controls">
+                <input type="text" id="phone">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="address">Street Address</label>
+              <div class="controls">
+                <input type="text" id="address">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="church">Church</label>
+              <div class="controls">
+                <input type="text" id="church">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="referred-by">Referred By</label>
+              <div class="controls">
+                <input type="text" id="referred-by">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="state">State / Zip</label>
+              <div class="controls">
+                <select class="span1">
+                  <option>AL</option>
+                  <option>AK</option>
+                  <option>AZ</option>
+                  <option>AR</option>
+                  <option>CA</option>
+                  <option>CO</option>
+                  <option>CT</option>
+                  <option>DE</option>
+                  <option>FL</option>
+                  <option>GA</option>
+                  <option>HI</option>
+                  <option>ID</option>
+                  <option>IL</option>
+                  <option>IN</option>
+                  <option>IA</option>
+                  <option>KS</option>
+                  <option>KY</option>
+                  <option>LA</option>
+                  <option>ME</option>
+                  <option>MD</option>
+                  <option>MA</option>
+                  <option>MI</option>
+                  <option>MN</option>
+                  <option>MS</option>
+                  <option>MO</option>
+                  <option>MT</option>
+                  <option>NE</option>
+                  <option>NV</option>
+                  <option>NH</option>
+                  <option>NJ</option>
+                  <option>NM</option>
+                  <option>NY</option>
+                  <option>NC</option>
+                  <option>ND</option>
+                  <option>OH</option>
+                  <option>OK</option>
+                  <option>OR</option>
+                  <option>PA</option>
+                  <option>RI</option>
+                  <option>SC</option>
+                  <option>SD</option>
+                  <option>TN</option>
+                  <option>TX</option>
+                  <option>UT</option>
+                  <option>VT</option>
+                  <option>VA</option>
+                  <option>WA</option>
+                  <option>WV</option>
+                  <option>WI</option>
+                  <option>WY</option>
+                </select>
+                <input class="span2" type="text" id="zip">
+              </div>
+            </div>
+            <hr>
+            <div class="control-group">
+              <label class="checkbox">
+                <div class="controls">
+                  <input type="checkbox" id="class-information" value="option1"> I would like to meet with a coach.
+                </div>
+              </label>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="best-time">Best time</label>
+              <div class="controls">
+                <label class="radio">
+                  <input type="radio" name="best-time" id="best-time" value="day" checked>
+                  Day
+                </label>
+                <label class="radio">
+                  <input type="radio" name="best-time" id="best-time" value="evening">
+                  Evening
+                </label>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="mar-status">Best Days</label>
+              <div class="controls">
+                <label class="radio">
+                  <input type="radio" name="best-days" id="best-days" value="weekdays" checked>
+                  Weekdays
+                </label>
+                <label class="radio">
+                  <input type="radio" name="best-days" id="best-days" value="weekends">
+                  Weekends
+                </label>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="checkbox">
+                <div class="controls">
+                  <input type="checkbox" id="class-information" value="option1"> I would like information on a class.
+                </div>
+              </label>
+            </div>
+            <div class="control-group">
+              <label class="checkbox">
+                <div class="controls">
+                  <input type="checkbox" id="class-information" value="option1"> I would like other assistance.
+                </div>
+              </label>
+            </div>
+            <div class="control-group">
+              <div class="controls">
+                Please Explain<br/>
+                <textarea rows="3" id="details"></textarea>
+              </div>
+            </div>
+            <hr>
+            <div class="control-group">
+              <div class="controls">
+                <input class="btn btn-info" type="submit" value="Submit &raquo;">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="span6">
+          <div style="padding-right:30px;padding-top:20px;padding-bottom:20px;margin-left:10px;text-align:justify;">
+
+            <h5>Here are a few things you can expect from a Financial Coaching Session.</h5>
+
+            <p>Our coaches are volunteers who have completed our coach training and desire to assist God’s people in setting up a budget, saving, debt management, career planinng and learning how to honor the Lord with their finances.</p>
+            <p>Married couples should plan on attending together, otherwise very little can be accomplished.</p>
+  
+            <ol>
+              <li>
+                <h5>Coaching Process</h5>
+                <p>The coach will discuss biblical stewardship and will explain what God expects from His children. Our coaches are serving under the authority of Alliance Community Church.</p>
+                <p>The coach will assist you in evaluating your present spending pattern and help you work towards a balanced spending plan.</p>
+                <p>Once the spending plan is agreed upon, the coach will act as an accountability partner with you and will inform you of other studies that will enhance your understanding of biblical stewardship.</p>
+              </li>
+              <li>
+                <h5>Information Needed</h5>
+                <p>You may be asked to bring your checkbook register, income tax forms, paycheck stubs, bank statements, current bills, or other related information.</p>
+              </li>
+              <li>
+                <h5>Meeting Location</h5>
+                <p>You will, meet your Coach at Alliance Community Church where there are very few distractions and where there is sufficient table space to work on your budget.</p>
+              </li>
+              <li>
+                <h5>Session Length</h5>
+                <p>Your first session will run between 1½ and 2 hours. Subsequent sessions should run a little over an hour.</p>
+              </li>
+            </ol>
+            <hr>
+            <div class="note">Please note: Our Coaches considers it an honor to serve the people of God. The Financial coaching referral service is a lay ministry of the volunteer coach, the local church, and Crown. There is no fee for this service. You may be given the option of purchasing material that will enhance your study of godly stewardship, but you are under no obligation to purchase any item or study. As mentioned above our coaches are volunteers who have completed our coach training and desire to assist God’s people in setting up a budget, Saving, debt management, career planinng and learning how to honor the Lord with their finances. Professional services such as investing, insurance, financial planning, and other related areas are not covered, other than to include these categories in a written spending plan if needed. If you are specifically looking for this type of help, we suggest that you contact a professional near you.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- container -->
+    <div class="footer">
+      <p>Alliance Community Fellowship Church © 2010<br/>
+      2185 Golden Heights Rd. Fort Worth, Texas 76177<br/>
+      Phone: (817) 439-0678 Fax: (817) 439-3820</p>
+    </div>
+  </body>
+</html>

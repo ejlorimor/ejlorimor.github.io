@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ACF Compass - Care Team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/acfcompass.css" rel="stylesheet" media="screen">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      var state_menu_req = true;
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <h3><img src="img/COMPASS-02.jpg" width="160" height="73" style="padding-left:40px;" /></h3>
+        <div class="navbar"></div>
+      </div>
+
+      <div class="row" style="padding-top:15px;">
+        <div class="span6">
+          <form class="form-horizontal">
+            <div class="control-group">
+              <label class="control-label" for="first-name">First Name</label>
+              <div class="controls">
+                <input type="text" id="first-name">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="last-name">Last Name</label>
+              <div class="controls">
+                <input type="text" id="last-name">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="mar-status">Martial Status</label>
+              <div class="controls">
+                <label class="radio">
+                  <input type="radio" name="mar-status" id="mar-status" value="married" checked>
+                  Married
+                </label>
+                <label class="radio">
+                  <input type="radio" name="mar-status" id="mar-status" value="single">
+                  Single
+                </label>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="spouses-name">Spouses Name</label>
+              <div class="controls">
+                <input type="text" id="spouses-name">
+              </div>
+            </div>
+            <hr>
+            <div class="control-group">
+              <label class="control-label" for="email">Email</label>
+              <div class="controls">
+                <input type="email" id="email">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="phone">Phone</label>
+              <div class="controls">
+                <input type="text" id="phone">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="address">Street Address</label>
+              <div class="controls">
+                <input type="text" id="address">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="church">Church</label>
+              <div class="controls">
+                <input type="text" id="church">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="referred-by">Referred By</label>
+              <div class="controls">
+                <input type="text" id="referred-by">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="state">State / Zip</label>
+              <div class="controls">
+                <select class="span1 state-menu"></select>
+                <input class="span2" type="text" id="zip">
+              </div>
+            </div>
+            <hr>
+            <div class="control-group">
+              <label class="checkbox">
+                <div class="controls">
+                  <input type="checkbox" id="class-information" value="option1"> I would like other assistance.
+                </div>
+              </label>
+            </div>
+            <div class="control-group">
+              <div class="controls">
+                Your need<br/>
+                <textarea rows="3" id="details"></textarea>
+              </div>
+            </div>
+            <hr>
+            <div class="control-group">
+              <div class="controls">
+                <input class="btn btn-info" type="submit" value="Submit &raquo;">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="span6">
+          <div style="margin-left:1.0em;text-align:justify;background-color:#eeeeee;">
+            <h5>ACF is an authentic community of faith doing life together in Jesus' name. If you or someone you know at ACF needs to experience this due to any type of life circumstance, please fill out this form.</h5>
+          </div>
+        </div>
+      </div>
+    </div> <!-- container -->
+    <div class="footer">
+      <p>Alliance Community Fellowship Church © 2010<br/>
+      2185 Golden Heights Rd. Fort Worth, Texas 76177<br/>
+      Phone: (817) 439-0678 Fax: (817) 439-3820</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+
+body {
+  background: no-repeat left top #000000;
+}
+
+canvas {
+  border: 0;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}

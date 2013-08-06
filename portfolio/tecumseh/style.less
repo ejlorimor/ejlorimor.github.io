@@ -1,0 +1,50 @@
+@gold: rgba(242, 159, 5, .95);
+
+body {
+  background-color: black;
+}
+
+.cubiverse {
+  width:625px;
+  height: 625px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hex {
+  margin-top: 52px;
+  width: 104px;
+  height: 60px;
+  position: absolute;
+}
+
+.hex:before, .hex:after {
+  content: " ";
+  width: 0;
+  position: absolute;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+.hex:before {
+  top: -30px;
+}
+
+.hex:after {
+  bottom: -30px;
+}
+
+.hex:hover {
+  background-image: url('shield_of_faith.png');
+  background-position: -210px -140px;
+}
+
+.gold {
+  background-color: @gold;  
+}
+.gold:before {
+  border-bottom: 30px solid @gold;
+}
+.gold:after {
+  border-top: 30px solid @gold;
+}
