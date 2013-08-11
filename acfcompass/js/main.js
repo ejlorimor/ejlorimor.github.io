@@ -37,8 +37,8 @@ function build_menu() {
     $.each(menu_items, function(i, v) {
 
         if (v.name == "Facebook") {
-            full_nav.push('<li><a href="'+v.link+'"><img src="img/FB-f-Logo__blue_29.png" height="20" width="20" /></a></li>');
-        
+            full_nav.push('<li><a href="'+v.link+'"><img src="img/FB-f-Logo__blue_29.png" height="20" width="20" target="_blank" /></a></li>');
+
         } else if (v.items != null) {
             full_nav.push('<li class="dropdown">');
             full_nav.push('<a href="#" class="dropdown-toggle" data-toggle="dropdown">');
